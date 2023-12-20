@@ -1,0 +1,162 @@
+CRITICAL - 2023-12-20 04:00:04 --> Undefined variable $subTitulo
+in APPPATH\Views\Testes\index.php on line 4.
+ 1 APPPATH\Views\Testes\index.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subTitulo', 'C:\\xampp\\htdocs\\food_delivery\\app\\Views\\Testes\\index.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\food_delivery\\app\\Views\\Testes\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Testes/index', [], true)
+ 5 APPPATH\Controllers\Testes.php(15): view('Testes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Testes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\food_delivery\\public\\index.php')
+CRITICAL - 2023-12-20 04:01:10 --> Undefined variable $subTitulo
+in APPPATH\Views\Testes\index.php on line 4.
+ 1 APPPATH\Views\Testes\index.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subTitulo', 'C:\\xampp\\htdocs\\food_delivery\\app\\Views\\Testes\\index.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\food_delivery\\app\\Views\\Testes\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Testes/index', [], true)
+ 5 APPPATH\Controllers\Testes.php(15): view('Testes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Testes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\food_delivery\\public\\index.php')
+ERROR - 2023-12-20 17:23:17 --> mysqli_sql_exception: Table 'ci4.usuarios' doesn't exist in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(745): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-144013_AdicionaColunaAtivoParaUsuarios.php(19): CodeIgniter\Database\Forge->addColumn('usuarios', Array)
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->up()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-20 17:24:59 --> mysqli_sql_exception: Table 'ci4.usuarios' doesn't exist in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(745): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-144013_AdicionaColunaAtivoParaUsuarios.php(19): CodeIgniter\Database\Forge->addColumn('usuarios', Array)
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->up()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-20 17:36:21 --> mysqli_sql_exception: Unknown table 'ci4.usuarios' in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE `usu...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `usu...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `usu...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `usu...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-041353_CriaTabelaUsuarios.php(37): CodeIgniter\Database\Forge->dropTable('usuarios')
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\CriaTabelaUsuarios->down()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(295): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\MigrateRollback.php(86): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\food_delivery\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-12-20 17:36:21 --> mysqli_sql_exception: Table 'ci4.usuarios' doesn't exist in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(745): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-144013_AdicionaColunaAtivoParaUsuarios.php(19): CodeIgniter\Database\Forge->addColumn('usuarios', Array)
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->up()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food_delivery\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-12-20 17:37:07 --> mysqli_sql_exception: Table 'ci4.usuarios' doesn't exist in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(745): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-144013_AdicionaColunaAtivoParaUsuarios.php(19): CodeIgniter\Database\Forge->addColumn('usuarios', Array)
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->up()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-20 17:45:39 --> mysqli_sql_exception: Unknown table 'ci4.usuarios' in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('DROP TABLE `usu...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `usu...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `usu...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `usu...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-041353_CriaTabelaUsuarios.php(37): CodeIgniter\Database\Forge->dropTable('usuarios')
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\CriaTabelaUsuarios->down()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(295): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\MigrateRollback.php(86): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\food_delivery\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-12-20 17:45:39 --> mysqli_sql_exception: Table 'ci4.usuarios' doesn't exist in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(745): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-144013_AdicionaColunaAtivoParaUsuarios.php(19): CodeIgniter\Database\Forge->addColumn('usuarios', Array)
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->up()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food_delivery\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-12-20 17:46:28 --> mysqli_sql_exception: Table 'ci4.usuarios' doesn't exist in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(745): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-144013_AdicionaColunaAtivoParaUsuarios.php(19): CodeIgniter\Database\Forge->addColumn('usuarios', Array)
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->up()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-12-20 17:47:52 --> mysqli_sql_exception: Table 'ci4.usuarios' doesn't exist in C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\food_delivery\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food_delivery\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food_delivery\system\Database\Forge.php(745): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food_delivery\app\Database\Migrations\2023-12-20-144013_AdicionaColunaAtivoParaUsuarios.php(19): CodeIgniter\Database\Forge->addColumn('usuarios', Array)
+#5 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(873): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->up()
+#6 C:\xampp\htdocs\food_delivery\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food_delivery\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food_delivery\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food_delivery\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food_delivery\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
