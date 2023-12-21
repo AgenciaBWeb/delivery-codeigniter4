@@ -41,12 +41,17 @@
                 </p>
                 <p class="card-text">
                     <span class="font-weight-bold">Criado:</span>
-                    <?php echo $usuario->criado_em; ?>
+                    <?php echo $usuario->criado_em->humanize(); ?>
                 </p>
                 <p class="card-text">
                     <span class="font-weight-bold">Atualizado:</span>
-                    <?php echo $usuario->atualizado_em; ?>
+                    <?php echo $usuario->atualizado_em->humanize(); ?>
                 </p>
+            </div>
+            <div class="card-footer bg-primary d-flex justify-content-center">
+                <a href="<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>" class="btn btn-dark mx-2"><i class="mdi mdi-pencil"> Editar</i></a>
+                <a href="<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>" class="btn btn-danger mx-2"><i class="mdi mdi-delete"> Excluir</i></a>
+                 <a href="<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>" class="btn btn-info mx-2"><i class="mdi mdi-arrow-left-bold"> Voltar</i></a>
             </div>
         </div>
     </div>
