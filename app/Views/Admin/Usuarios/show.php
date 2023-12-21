@@ -50,8 +50,8 @@
             </div>
             <div class="card-footer bg-primary d-flex justify-content-center">
                 <a href="<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>" class="btn btn-dark mx-2"><i class="mdi mdi-pencil"> Editar</i></a>
-                <a href="<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>" class="btn btn-danger mx-2"><i class="mdi mdi-delete"> Excluir</i></a>
-                 <a href="<?php echo site_url("admin/usuarios/editar/$usuario->id"); ?>" class="btn btn-info mx-2"><i class="mdi mdi-arrow-left-bold"> Voltar</i></a>
+                <a href="<?php echo site_url("admin/usuarios/excluir/$usuario->id"); ?>" class="btn btn-danger mx-2"><i class="mdi mdi-delete"> Excluir</i></a>
+                 <a href="<?php echo site_url("admin/usuarios"); ?>" class="btn btn-info mx-2"><i class="mdi mdi-arrow-left-bold"> Voltar</i></a>
             </div>
         </div>
     </div>
