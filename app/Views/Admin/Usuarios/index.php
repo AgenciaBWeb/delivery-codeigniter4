@@ -79,7 +79,7 @@
                         if (data.length < 1) {
                             var data = [
                                 {
-                                    label: 'Unuário não encontrado!',
+                                    label: 'Usuário não encontrado!',
                                     value: -1
                                 }
                             ];
@@ -93,10 +93,10 @@
             minLenght: 1,
             select: function(event, ui){
                 if(ui.item.value == -1){
-                    $(this).val('');
+                    $(this).val("");
                     return false;
                 }else{
-                    window.location.href = "<?php echo site_url('admin/usuarios/show/'); ?>"+ui.item.id;
+                    window.location.href = '<?php echo site_url('admin/usuarios/show/'); ?>'+ui.item.id;
                 }
                     
             }
